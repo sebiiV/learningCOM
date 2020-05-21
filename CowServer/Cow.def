@@ -1,0 +1,9 @@
+LIBRARY      Cow
+DESCRIPTION  'Cow In-Proc Server'
+
+EXPORTS
+	DllRegisterServer	@1 PRIVATE ; COM server registration
+	DllUnregisterServer	@2 PRIVATE ; COM server deregistration
+    DllCanUnloadNow		@3 PRIVATE 
+    DllGetClassObject	@4 PRIVATE 
+
