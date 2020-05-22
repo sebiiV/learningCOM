@@ -1,6 +1,7 @@
 #ifndef COWCOMMON_H
 #define COWCOMMON_H
 #include <objbase.h>
+#include <OAIdl.h>
 #include <initguid.h>
 
 extern ULONG g_cObjects;

@@ -51,7 +51,7 @@ void main() {
 		goto CLEANUP01;
 	}
 	std::cout << "main: pUnk->QueryInterface(IID_ICow,...) OK\n" << std::endl;
-
+	system("pause");
 
 	std::cout << "main: Now Calling into the ICow Interface...Hello Cow!\n" << std::endl;
 	hr = pCow->HelloCow();
@@ -73,8 +73,6 @@ CLEANUP02:
 CLEANUP01:
 	std::cout << "main: calling IUnknown::Release" << std::endl;
 	pUnk->Release();
-
-
 
 CLEANUP00:
 	std::cout << "main: calling IClassFactory::Release" << std::endl;
